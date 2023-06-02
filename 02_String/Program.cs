@@ -16,85 +16,116 @@ namespace _02_String
             //5. By calling a formatting method to convert a value or an object to its string representation
 
             //from string literal and string concatenation
-            string fname, lname;
-            fname = "Rowan";
-            lname = "Atkinson";
+            /* string fname, lname;//reference - null
+             fname = "Rowan";
+             lname = "Atkinson";
 
-            string fullname = fname + " bla bla bla " + lname;
-            Console.WriteLine($"Full Name: {fullname}");
-            Console.ReadKey();
+             string fullname = fname + " bla bla bla " + lname;
+             Console.WriteLine($"Full Name: {fullname}");
+             Console.ReadKey();
 
-            //by using string constructor
-            char[] letters = { 'H', 'e', 'l', 'l', 'o' };
-            Console.WriteLine(letters.Length);
-            string greetings = new string(letters, 1, 3); // ell        
-            Console.WriteLine("Greetings: {0}", greetings);
-            Console.ReadKey();
+             //by using string constructor
+             char[] letters = { 'H', 'e', 'l', 'l', 'o' };
+             Console.WriteLine(letters.Length);
+             string greetings = new string(letters, 1, 3); // ell        
+             Console.WriteLine(greetings);
+             Console.WriteLine("Greetings: " +  greetings);
+             Console.WriteLine($"Greetings: {greetings}");
+             Console.WriteLine("Greetings: {0} {1}, {2}", "Hello", greetings, 100);
+             Console.ReadKey();
 
-            //methods returning string
-            string[] sarray = { "Hello", "From", "Tutorials", "Point" };
-            string message = string.Join(" - ", sarray);
-            Console.WriteLine("Message: {0}", message);
+             //methods returning string
 
-            string[] splitedArr = message.Split(new string[] { " - " }, StringSplitOptions.None);
-            foreach (var item in splitedArr)
-            {
-                Console.WriteLine(item);
-            }
+             string[] sarray = { "Hello", "From", "Tutorials", "Point" };
+             string message = string.Join(" - ", sarray);
+             Console.WriteLine("Message: {0}", message);
+             message.Split(new char[] { ' ', ',', '.', '!' });
+             message.Split(' ');
+             string[] splitedArr = message.Split(new string[] { " - " }, StringSplitOptions.None);
+             foreach (var item in splitedArr)
+             {
+                 Console.WriteLine(item);
+             }
 
-            ConsoleKeyInfo key = Console.ReadKey();
-            if (key.Key == ConsoleKey.F12)
-                Console.WriteLine("F12 - Have a good day!");
+             ConsoleKeyInfo key = Console.ReadKey();
+             if (key.Key == ConsoleKey.F12)
+                 Console.WriteLine("F12 - Have a good day!");
 
-            string sentense = "Hello, C#! What do you do, if balbla?";
-            string[] words = sentense.Split(new char[] { ' ', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+             string sentense = "Hello, C#! What do you do, if balbla?";
+             string[] words = sentense.Split(new char[] { ' ', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
 
-            foreach (var word in words)
-            {
-                Console.WriteLine($"|{word}|");
-            }
+             foreach (var word in words)
+             {
+                 Console.WriteLine($"|{word}|");
+             }
 
-            Console.OutputEncoding = Encoding.UTF8;
-            //formatting method to convert a value
-            DateTime dateNow = DateTime.Now;
-            Console.WriteLine(dateNow);
-            Console.WriteLine(dateNow.ToString());
-            Console.WriteLine(dateNow.ToLongDateString());
-            Console.WriteLine(dateNow.ToLongTimeString());
-            Console.WriteLine(dateNow.ToShortDateString());
-            Console.WriteLine(dateNow.ToShortTimeString());
-            Console.WriteLine(dateNow.ToString("yyyy:MM:dd"));
+             Console.OutputEncoding = Encoding.UTF8;
+             //formatting method to convert a value
+             DateTime dateNow = DateTime.Now;
+             Console.WriteLine(dateNow);
+             Console.WriteLine(dateNow.ToString());
+             Console.WriteLine(dateNow.ToLongDateString());
+             Console.WriteLine(dateNow.ToLongTimeString());
+             Console.WriteLine(dateNow.ToShortDateString());
+             Console.WriteLine(dateNow.ToShortTimeString());
+             Console.WriteLine(dateNow.ToString("yyyy:MM:dd"));
 
 
-            DateTime dateTime2 = dateNow;
-            dateTime2 = dateTime2.AddDays(2.5);
-            dateTime2 = dateTime2.AddHours(1.5);
+             DateTime dateTime2 = dateNow;
+             dateTime2 = dateTime2.AddDays(2.5);
+             dateTime2 = dateTime2.AddHours(1.5);
 
-            TimeSpan timeSpan = dateTime2 - dateNow;
-            Console.WriteLine("TimeSpan: " + timeSpan.ToString());
+             TimeSpan timeSpan = dateTime2 - dateNow;
+             Console.WriteLine("TimeSpan: " + timeSpan.ToString());
 
-            Console.WriteLine($"Milliseconds: {timeSpan.Milliseconds}");
-            Console.WriteLine($"Seconds: {timeSpan.Seconds}");
-            Console.WriteLine($"Minutes: {timeSpan.Minutes}");
-            Console.WriteLine($"Hours: {timeSpan.Hours}");
-            Console.WriteLine($"Days: {timeSpan.Days}");
+             Console.WriteLine($"Milliseconds: {timeSpan.Milliseconds}");
+             Console.WriteLine($"Seconds: {timeSpan.Seconds}");
+             Console.WriteLine($"Minutes: {timeSpan.Minutes}");
+             Console.WriteLine($"Hours: {timeSpan.Hours}");
+             Console.WriteLine($"Days: {timeSpan.Days}");
 
-            Console.WriteLine($"Total Milliseconds: {timeSpan.TotalMilliseconds}");
-            Console.WriteLine($"Total Seconds: {timeSpan.TotalSeconds}");
-            Console.WriteLine($"Total Minutes: {timeSpan.TotalMinutes}");
-            Console.WriteLine($"Total Hours: {timeSpan.TotalHours}");
-            Console.WriteLine($"Total Days: {timeSpan.TotalDays}");
+             Console.WriteLine($"Total Milliseconds: {timeSpan.TotalMilliseconds}");
+             Console.WriteLine($"Total Seconds: {timeSpan.TotalSeconds}");
+             Console.WriteLine($"Total Minutes: {timeSpan.TotalMinutes}");
+             Console.WriteLine($"Total Hours: {timeSpan.TotalHours}");
+             Console.WriteLine($"Total Days: {timeSpan.TotalDays}");
+             //String interpolations
+            */
+            //C / c
+            //Задает формат денежной единицы, указывает количество десятичных разрядов после запятой
+            //
+            //D / d
+            //Целочисленный формат, указывает минимальное количество цифр
+            //
+            //E / e
+            //Экспоненциальное представление числа, указывает количество десятичных разрядов после запятой
+            //
+            //F / f
+            //Формат дробных чисел с фиксированной точкой, указывает количество десятичных разрядов после запятой
+            //
+            //G / g
+            //Задает более короткий из двух форматов: F или E
+            //
+            //N / n
+            //Также задает формат дробных чисел с фиксированной точкой, определяет количество разрядов после запятой
+            //
+            //P / p
+            //Задает отображения знака процентов рядом с число, указывает количество десятичных разрядов после запятой
+            //
+            //X / x
+            //Шестнадцатеричный формат числа
 
+            /*
             decimal money = 35.60M;
 
-            CultureInfo us = new CultureInfo("uk-UA");
+            CultureInfo us = new CultureInfo("de-DE");
 
             string chat = String.Format("Message sent at {0:t} on {0:d}", dateNow);
             string khat = $"Message sent at {dateNow:t} on {dateNow:d} bablo:{money.ToString("C2", us)}";
             Console.WriteLine($"Message: {chat}!");
             Console.WriteLine($"Message: {khat}");
             Console.ReadKey();
-
+            */
             //Properties
 
             //1   Chars
@@ -161,7 +192,7 @@ namespace _02_String
             //
             //19	public string Insert(int startIndex, string value)
             //Returns a new string in which a specified string is inserted at a specified index position in the current string object.
-            //
+            //string res;
             //20	public static bool IsNullOrEmpty(string value)
             //Indicates whether the specified string is null or an Empty string.
             //
@@ -217,7 +248,7 @@ namespace _02_String
 
             if (nullStr != null)
                 nullStr.ToString();
-
+            Console.WriteLine(nullStr?.Length);
             nullStr?.ToString(); // null-conditional 
 
             string emptyStr = "";
@@ -226,9 +257,10 @@ namespace _02_String
             {
                 Console.WriteLine("Is null or empty!");
             }
-
+            Console.WriteLine(emptyStr.Length);
             Console.ReadKey(); // pause
-            string str = "                 ";
+            string str = "                ";
+            Console.WriteLine(str.Length);
             if (string.IsNullOrWhiteSpace(str))
             {
                 Console.WriteLine("Is null or white space...");
@@ -250,7 +282,7 @@ namespace _02_String
             Console.ReadKey();
 
             //String Contains String:
-            string str3 = "This is testing";
+            string str3 = "This is test ing";
             if (str3.Contains("test"))
             {
                 Console.WriteLine("The sequence 'test' was found.");
@@ -282,9 +314,9 @@ namespace _02_String
                 Console.WriteLine("Word: " + item);
             }
             Console.ReadKey();
-            */
+            
             //String interpolations
-
+            */
             //C / c
             //Задает формат денежной единицы, указывает количество десятичных разрядов после запятой
             //
@@ -308,17 +340,17 @@ namespace _02_String
             //
             //X / x
             //Шестнадцатеричный формат числа
-            /*
+            
             int number = 23;
             string result = String.Format("Number: {0:d5}", number);
             Console.WriteLine(result); // 23
             //string result2 = String.Format("{0:d4}", number);
-            string result2 = $"{number:d4}";
+            string result2 = $" Number : {number:d4}";
             Console.WriteLine(result2); // 0023
             Console.ReadKey(); // pause
 
             int number1 = 23;
-            string result1 = String.Format("{0:f}", number1);
+            string result1 = String.Format("{0:f4}", number1);
             Console.WriteLine(result1); // 23,00
             Console.ReadKey(); // pause
 
@@ -335,12 +367,14 @@ namespace _02_String
             Console.WriteLine(result6); // +1 (987) 654-32-10
             Console.ReadKey(); // pause
 
-            //was            
+            //was
+            
             var anInt = 1;
             var aBool = true;
             var aString = "3";
             var formated = string.Format("{0},{1},{2}", anInt, aBool, aString);
             Console.WriteLine(formated);
+            Console.WriteLine("{0},{1},{2}", anInt, aBool, aString);
             Console.ReadKey();
             //become
             var anInt1 = 1;
@@ -350,8 +384,9 @@ namespace _02_String
             Console.WriteLine(formated1);
             Console.ReadKey();
             //
+            Console.WriteLine(@$"C:\Users\helen\Desktop\Work\C#\1{aBool}");
             var someDir = "a";
-            Console.WriteLine($@"c:\{someDir}\b         
+            Console.WriteLine(@$"c:\{someDir}\b         
 mvbjcvl;bncv;
 xcvxckbvx
             kjhrgksjerhglearhglierhg
@@ -365,7 +400,7 @@ erjkghaer               kherlkf
             Console.WriteLine($"Name: {"Ivan",10} Age: {23}"); // spaces before
             Console.WriteLine($"Name: {"Veronika",10} Age: {34}"); // spaces after
             Console.ReadKey(); // pause
-
+            
 
             //Concatanation
             string s1 = "hello";
@@ -398,7 +433,7 @@ erjkghaer               kherlkf
             int indexOfSubstring = s11.IndexOf(subString); // = 6
             Console.WriteLine(indexOfSubstring);
             Console.ReadKey();
-
+            
             //broken string
             string text = "This is the last day of ^ ^ ^       winter";
 
@@ -420,11 +455,11 @@ erjkghaer               kherlkf
 
             string s12 = " ? Me tengo?!, To be honest!!!   ";
             //s12 = s12.Trim();
-
+           
             s12 = s12.Trim(new char[] { '?', ' ', '!' });
             Console.WriteLine($"After trimming: /{s12}/");
-            Console.ReadKey();*/
-
+            Console.ReadKey();
+           
         }
     }
 }
