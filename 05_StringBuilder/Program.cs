@@ -6,14 +6,19 @@ namespace _05_StringBuilder
     {
         static void Main(string[] args)
         {
+            string s = "";
+            Console.WriteLine(s.Length);
             string strT = "hello";
+            Console.WriteLine(strT.Length);
             strT += ", world";
+            Console.WriteLine(strT.Length);
 
-            var b = new StringBuilder();
+            StringBuilder b = new StringBuilder();
 
             Console.WriteLine("Cap: " + b.Capacity);
+          
             b.Append(12345678901627345);
-
+            b.AppendLine();
             Console.WriteLine("String length: {0}", b.Length);
             Console.WriteLine("String capacity: {0}", b.Capacity);  //memmory used
             Console.WriteLine("Value: {0}", b.ToString());
@@ -34,6 +39,7 @@ namespace _05_StringBuilder
 
             Console.WriteLine("String length: {0}", sb.Length);
             Console.WriteLine("String capacity: {0}", sb.Capacity);  //memmory used
+            Console.WriteLine(sb);
             Console.ReadKey();
 
             StringBuilder sb1 = new StringBuilder(20);
