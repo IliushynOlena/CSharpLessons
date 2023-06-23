@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_OwnInterfaces", "10_OwnI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_IndexerInterfaceInheritance", "11_IndexerInterfaceInheritance\11_IndexerInterfaceInheritance.csproj", "{87FEC3B1-DF03-4284-87B8-2148A4AA8559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_StandartInterfaceEnum", "12_StandartInterfaceEnum\12_StandartInterfaceEnum.csproj", "{BE8EB4D0-7B26-4020-A47C-02186CFF6E7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_StandartInterfaceEnum", "12_StandartInterfaceEnum\12_StandartInterfaceEnum.csproj", "{BE8EB4D0-7B26-4020-A47C-02186CFF6E7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_Delegates", "13_Delegates\13_Delegates.csproj", "{815F7179-1129-4522-9299-96BDFC58E259}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{BE8EB4D0-7B26-4020-A47C-02186CFF6E7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE8EB4D0-7B26-4020-A47C-02186CFF6E7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE8EB4D0-7B26-4020-A47C-02186CFF6E7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{815F7179-1129-4522-9299-96BDFC58E259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{815F7179-1129-4522-9299-96BDFC58E259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{815F7179-1129-4522-9299-96BDFC58E259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{815F7179-1129-4522-9299-96BDFC58E259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
