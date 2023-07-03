@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_IndexerInterfaceInherita
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_StandartInterfaceEnum", "12_StandartInterfaceEnum\12_StandartInterfaceEnum.csproj", "{BE8EB4D0-7B26-4020-A47C-02186CFF6E7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_Delegates", "13_Delegates\13_Delegates.csproj", "{815F7179-1129-4522-9299-96BDFC58E259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_Delegates", "13_Delegates\13_Delegates.csproj", "{815F7179-1129-4522-9299-96BDFC58E259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Event", "14_Event\14_Event.csproj", "{9E942DCA-0ED5-4501-8684-2B0DE412B332}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{815F7179-1129-4522-9299-96BDFC58E259}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{815F7179-1129-4522-9299-96BDFC58E259}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{815F7179-1129-4522-9299-96BDFC58E259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E942DCA-0ED5-4501-8684-2B0DE412B332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E942DCA-0ED5-4501-8684-2B0DE412B332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E942DCA-0ED5-4501-8684-2B0DE412B332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E942DCA-0ED5-4501-8684-2B0DE412B332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
